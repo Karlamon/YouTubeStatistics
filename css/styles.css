@@ -1,0 +1,187 @@
+.columns {
+	margin: auto;
+}
+.graphs {
+	float: left;
+	width: 55%;
+}
+.tables {
+	float: right;
+	width: 45%;
+}
+/* Clear floats after the columns */
+.columns:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+body {
+	font-family: Arial-BoldMT, Arial;
+	text-align: center;
+	max-width: 55%;
+	margin: auto;
+	background: #fafafa;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+}
+h1 {
+	font-size: 48px;
+	color: #282828;
+	font-family: Arial-BoldMT, Arial;
+	font-weight: 700;
+}
+p {
+	font-family: Roboto, Arial, sans-serif;
+	text-align: left;
+	font-size: 16px;
+}
+a:link {
+	color: #212121;
+}
+a:hover {
+	color: #9B9B9B;
+}
+table {
+	background-color: #f5f5f5;
+	border: 1px solid black;
+	border-color: #eeeeee;
+	table-layout: fixed;
+	width: 100%;
+	color: #282828;
+	font-size: 16px;
+}
+th, td {
+	border-bottom: 1px solid #ddd;
+}
+rect {
+	transform-origin: center;
+}
+.buttons button {
+	position: relative;
+	background-color: #C6C6C6;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #282828;
+	padding: 12px;
+	text-align: center;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+.buttons button:after {
+	content: "";
+	background: #333;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s;
+}
+.buttons button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+}
+.percent-display {
+	font-size: 120%;
+	color: #282828;
+	font-family: Arial-BoldMT, Arial;
+	font-weight: 700;
+	padding-left: 5%;
+}
+.minutes-watched, .videos-watched, .vote-ratio, .likes {
+	transition: transform 2s;
+}
+/*Overall*/
+.overall .minutes-watched .videos-watched .vote-ratio {
+	transform: none;
+}
+.overall .likes {
+	transform: translateX(95.83%);
+}
+/*Comedy*/
+.comedy .minutes-watched {
+	transform: scale(0.0900, 0.0900);
+}
+.comedy .videos-watched {
+	transform: scale(0.0690, 0.0690);
+}
+.comedy .vote-ratio {
+	transform: scale(0.0820, 0.0820);
+}
+.comedy .likes {
+	transform: translateX(98.85%);
+}
+/*Education*/
+.education .minutes-watched {
+	transform: scale(0.1237, 0.1237);
+}
+.education .videos-watched {
+	transform: scale(0.1034, 0.1034);
+}
+.education .vote-ratio {
+	transform: scale(0.0519, 0.0519);
+}
+.education .likes {
+	transform: translateX(99.50%);
+}
+/*Entertainment*/
+.entertainment .minutes-watched {
+	transform: scale(0.2276, 0.2276);
+}
+.entertainment .videos-watched {
+	transform: scale(0.3103, 0.3103);
+}
+.entertainment .vote-ratio {
+	transform: scale(0.0120, 0.0120);
+}
+.entertainment .likes {
+	transform: translateX(91.35%);
+}
+/*Film & Animation*/
+.film-animation .minutes-watched {
+	transform: scale(0.5077, 0.5077);
+}
+.film-animation .videos-watched {
+	transform: scale(0.4483, 0.4483);
+}
+.film-animation .vote-ratio {
+	transform: scale(0.0245, 0.0245);
+}
+.film-animation .likes {
+	transform: translateX(98.26%);
+}
+/*Howto & Style*/
+.howto-style .minutes-watched {
+	transform: scale(0.0233, 0.0233);
+}
+.howto-style .videos-watched {
+	transform: scale(0.0345, 0.0345);
+}
+.howto-style .vote-ratio {
+	transform: scale(0.0181, 0.0181);
+}
+.howto-style .likes {
+	transform: translateX(98.77%);
+}
+/*People & Blogs*/
+.people-blogs .minutes-watched {
+	transform: scale(0.0277, 0.0277);
+}
+.people-blogs .videos-watched {
+	transform: scale(0.0345, 0.0345);
+}
+.people-blogs .vote-ratio {
+	transform: scale(0.0203, 0.0203);
+}
+.people-blogs .likes {
+	transform: translateX(99.54%);
+}
